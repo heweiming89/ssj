@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ssj?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: null
+  redis:
+    database: 0
+    host: 120.77.181.175
+    port: 6379
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+flyway:
+  enabled: false
+encryption:
+  rsa:
+    public-key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAYhj/LN0aNwFyZxPOL8MI5s7xXXp8bkD+jhuqLu6E0NWAyoCfgkFPh7NPxk8b4OAjBaX8cwLM3XD5oDRauRHvMREZ9wnzUBso0Jfgb6OMF3sLIwWmfTw4m4kTgBWUj6/EVSxPmIZA9K+U2pHWkQnrvyfftQBc6icfrF+dD8vfowIDAQAB
+    private-key: MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAMBiGP8s3Ro3AXJnE84vwwjmzvFdenxuQP6OG6ou7oTQ1YDKgJ+CQU+Hs0/GTxvg4CMFpfxzAszdcPmgNFq5Ee8xERn3CfNQGyjQl+Bvo4wXewsjBaZ9PDibiROAFZSPr8RVLE+YhkD0r5TakdaRCeu/J9+1AFzqJx+sX50Py9+jAgMBAAECgYBfI6Qs/WjSgAVNKECZJPGUw1/v6USbqIKn4Gs5/D+kmwoayQpW17motPkuKGoS5WCysSZm9BGccp5eNKXvf7qn7dIGcNtVo8Ho/gF8R0gq5MTuLwxCdSb+FsD2V1G4Hmb+mfKM/sB4h5fU0J3x4bEdhpFGU3ZK2Sf1/m80HnTr8QJBAONSH+5Anp0tue3nM6M0/zWTz2+OA9oGX0SV3hOfQQeaAVbO/Z64+bzFG1L8Vjuxzc349Tc+65dtpHs8i7jN42UCQQDYp5QR1xo5MdzGNAuoNFW1uAG1T+iD0yrbc7KaAZYmKaiiws/ziNEtpQZ44t+858VJ3ViQI59MajcyK4/95rpnAkEArqBDCTq43lPnNfvbLjAjMVxYCQFWsiEdBEoArKA1S4qiJraiHFFLABmG8QwJjpf7WpQ6g/Mg9lXy+fy79P6tBQJADwnKwFZC7rdkUKmqKXnAfUWRcMlkJUpSDjuAqSn1Bx8bInkNQCU+B8INqfRtfUpFKnRfwlmGpCI3RJc7fm82fwJBALQT7H6EFrPWUB8lt++BfEt1ZNPsz/+bilsKVoeg/3l7pbGbkmXoTSIaiA/XVljqzAC+v7s2ENp0D2eiNfuWlP4=

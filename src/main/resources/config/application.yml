@@ -1,0 +1,21 @@
+debug: false
+server:
+  port: 8080
+  context-path: /ssj
+spring:
+  application:
+    name: ssj
+  profiles:
+    active:
+    - default
+    - @env@
+  jpa:
+    hibernate:
+      ddl-auto: none
+  thymeleaf:
+    mode: HTML
+    cache: false
+  freemarker:
+    check-template-location: false
+flyway:
+  enabled: false
